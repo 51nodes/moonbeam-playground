@@ -1,0 +1,8 @@
+version: '3'
+services:
+  moonbeam-dev-node:
+    image: purestake/moonbase:tutorial-v3
+    ports:
+      - "9933:9933"
+      - "9944:9944"
+    command: /moonbase/moonbase-standalone --dev --ws-external --rpc-external --rpc-cors all
